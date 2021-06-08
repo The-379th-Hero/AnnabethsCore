@@ -1,0 +1,8 @@
+{
+	"type": "annabethscore:sawmill",
+	"ingredient": {
+		"item": "minecraft:spruce_log"
+	},
+	"result": "minecraft:spruce_sign",
+	"count": 8
+}

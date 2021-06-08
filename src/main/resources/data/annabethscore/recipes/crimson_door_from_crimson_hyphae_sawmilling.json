@@ -1,0 +1,8 @@
+{
+	"type": "annabethscore:sawmill",
+	"ingredient": {
+		"item": "minecraft:crimson_hyphae"
+	},
+	"result": "minecraft:crimson_door",
+	"count": 8
+}

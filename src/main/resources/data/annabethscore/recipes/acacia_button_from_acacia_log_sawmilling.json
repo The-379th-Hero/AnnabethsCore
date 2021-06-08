@@ -1,0 +1,8 @@
+{
+	"type": "annabethscore:sawmill",
+	"ingredient": {
+		"item": "minecraft:acacia_log"
+	},
+	"result": "minecraft:acacia_button",
+	"count": 32
+}

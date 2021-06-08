@@ -1,0 +1,8 @@
+{
+	"type": "annabethscore:sawmill",
+	"ingredient": {
+		"item": "minecraft:jungle_log"
+	},
+	"result": "minecraft:stripped_jungle_wood",
+	"count": 1
+}

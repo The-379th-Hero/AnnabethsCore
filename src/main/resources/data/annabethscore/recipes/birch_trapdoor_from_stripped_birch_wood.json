@@ -1,0 +1,8 @@
+{
+	"type": "annabethscore:sawmill",
+	"ingredient": {
+		"item": "minecraft:stripped_birch_wood"
+	},
+	"result": "minecraft:birch_trapdoor",
+	"count": 16
+}
