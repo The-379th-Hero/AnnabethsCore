@@ -1,0 +1,13 @@
+{
+	"type": "annabethscore:click",
+	"inblock": {
+		"block": "minecraft:spruce_log"
+	},
+	"outblock": "minecraft:stripped_spruce_log",
+	"ingredient": {
+		"tag": "forge:axes"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.axe.strip"
+}

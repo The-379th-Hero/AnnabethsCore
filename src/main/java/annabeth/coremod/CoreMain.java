@@ -15,6 +15,8 @@ public class CoreMain {
 	public static final String VILLAGERS_MODID = "annabethsextravillagers";
 	public static final String SSW_MODID = "sswplus";
 	public static final String VOREE_MODID = "voree";
+	public static final String LEAF_MODID = "leaf";
+	public static final String SNA_MODID = "annabethsnethermod";
 	
 	public static final Logger LOGGER = LogManager.getLogger();
 	

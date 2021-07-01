@@ -1,0 +1,13 @@
+{
+	"type": "annabethscore:click",
+	"inblock": {
+		"block": "minecraft:grass_block"
+	},
+	"outblock": "minecraft:grass_path",
+	"ingredient": {
+		"tag": "forge:shovels"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.shovel.flatten"
+}

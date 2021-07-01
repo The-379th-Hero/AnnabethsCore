@@ -14,6 +14,8 @@ public class RegistryHandler {
 	public static void registerRecipes(RegistryEvent.Register<IRecipeSerializer<?>> e) {
 		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(CoreMain.MODID, "sawmill"), RecipeVars.SAWMILL_RECIPE);
 		e.getRegistry().register(RecipeVars.SAWMILL_SERIALIZER);
+		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(CoreMain.MODID, "click"), RecipeVars.CLICK_RECIPE);
+		e.getRegistry().register(RecipeVars.CLICK_SERIALIZER);
 	}
 	
 }

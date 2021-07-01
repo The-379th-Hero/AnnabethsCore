@@ -1,0 +1,13 @@
+{
+	"type": "annabethscore:click",
+	"inblock": {
+		"block": "minecraft:acacia_wood"
+	},
+	"outblock": "minecraft:stripped_acacia_wood",
+	"ingredient": {
+		"tag": "forge:axes"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.axe.strip"
+}

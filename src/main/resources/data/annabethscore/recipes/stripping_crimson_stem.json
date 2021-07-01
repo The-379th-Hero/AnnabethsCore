@@ -1,0 +1,13 @@
+{
+	"type": "annabethscore:click",
+	"inblock": {
+		"block": "minecraft:crimson_stem"
+	},
+	"outblock": "minecraft:stripped_crimson_stem",
+	"ingredient": {
+		"tag": "forge:axes"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.axe.strip"
+}

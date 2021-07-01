@@ -1,0 +1,13 @@
+{
+	"type": "annabethscore:click",
+	"inblock": {
+		"block": "minecraft:crimson_hyphae"
+	},
+	"outblock": "minecraft:stripped_crimson_hyphae",
+	"ingredient": {
+		"tag": "forge:axes"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.axe.strip"
+}

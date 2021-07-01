@@ -1,0 +1,14 @@
+{
+	"type": "annabethscore:click",
+	"inblock": [
+		"minecraft:grass_block",
+		"minecraft:dirt"
+	],
+	"outblock": "minecraft:farmland",
+	"ingredient": {
+		"tag": "forge:hoes"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.hoe.till"
+}

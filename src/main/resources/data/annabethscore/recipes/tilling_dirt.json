@@ -1,0 +1,13 @@
+{
+	"type": "annabethscore:click",
+	"inblock": {
+		"block": "minecraft:coarse_dirt"
+	},
+	"outblock": "minecraft:dirt",
+	"ingredient": {
+		"tag": "forge:hoes"
+	},
+	"click": "right",
+	"consume": "weak_consume",
+	"sound": "minecraft:item.hoe.till"
+}
