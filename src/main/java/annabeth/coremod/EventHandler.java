@@ -1,23 +1,20 @@
-package annabeth.coremod.util;
+package annabeth.coremod;
 
 import java.util.List;
 
 import com.google.common.collect.Lists;
 
-import annabeth.coremod.CoreMain;
 import annabeth.coremod.crafting.BlockStateConverting;
 import annabeth.coremod.crafting.ClickRecipe;
 import annabeth.coremod.crafting.RecipeVars;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.HorizontalBlock;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.ActionResultType;
-import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
@@ -51,17 +48,7 @@ public class EventHandler {
 				Block blockIn = state.getBlock();
 				Block blockOut = recipe.getOutputBlock();
 				
-				BlockState newState = BlockStateConverting.convert(state, blockIn, blockOut);
-				
-				if (newState.hasProperty(HorizontalBlock.FACING) && !state.hasProperty(HorizontalBlock.FACING)) {
-					Direction dir = event.getFace();
-					
-					if (dir == Direction.UP || dir == Direction.DOWN) {
-						dir = player.getDirection();
-					}
-					
-					newState = newState.setValue(HorizontalBlock.FACING, dir);
-				}
+				BlockState newState = BlockStateConverting.convert(state, blockIn, blockOut, event.getFace(), player.getDirection());
 				
 				recipe.playSound(world, player, pos);
 				

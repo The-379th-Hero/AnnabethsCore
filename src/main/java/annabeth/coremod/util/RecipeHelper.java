@@ -12,12 +12,12 @@ public class RecipeHelper {
 	private RecipeHelper() {
 	}
 	
-	public Map<ResourceLocation, IRecipe<?>> getRecipes(IRecipeType<?> type, RecipeManager manager) {
+	public static Map<ResourceLocation, IRecipe<?>> getRecipes(IRecipeType<?> type, RecipeManager manager) {
 		final Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> map =  ObfuscationReflectionHelper.getPrivateValue(RecipeManager.class, manager, "field_199522_d");
 		return map.get(type);
 	}
 	
-	public Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> getRecipes(RecipeManager manager) {
+	public static Map<IRecipeType<?>, Map<ResourceLocation, IRecipe<?>>> getRecipes(RecipeManager manager) {
 		return ObfuscationReflectionHelper.getPrivateValue(RecipeManager.class, manager, "field_199522_d");
 	}
 }

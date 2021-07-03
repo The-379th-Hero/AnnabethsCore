@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.1'
+version = '1.1.1'
 group = 'annabeth.coremod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'annabethscore'
 
@@ -144,7 +144,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 	
 	runtimeOnly fg.deobf("annabeth.extravillagers:AnnabethsExtraVillagers:1.0")
-	runtimeOnly fg.deobf("annabeth.sswplus:StairsSlabsWallsPlus:1.0")
+	runtimeOnly fg.deobf("annabeth.sswplus:StairsSlabsWallsPlus:1.1")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

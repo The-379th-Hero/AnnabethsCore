@@ -39,6 +39,11 @@ public class AnnabethTags {
 		public static final IOptionalNamedTag<Item>  OVERWORLD_TRAPDOORS = create("overworld_trapdoors");
 		public static final IOptionalNamedTag<Item> COLORED_TERRACOTTA = create("colored_terracotta");
 		public static final IOptionalNamedTag<Item> GLAZED_TERRACOTTA = create("glazed_terracotta");
+		public static final IOptionalNamedTag<Item> AXES = create("forge", "axes");
+		public static final IOptionalNamedTag<Item> HOES = create("forge", "hoes");
+		public static final IOptionalNamedTag<Item> PICKAXES = create("forge", "pickaxes");
+		public static final IOptionalNamedTag<Item> SHOVELS = create("forge", "shovels");
+		public static final IOptionalNamedTag<Item> SWORDS = create("forge", "swords");
 		
 		public static IOptionalNamedTag<Item> create(String name) {
 			return create(CoreMain.MODID, name);

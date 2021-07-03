@@ -16,6 +16,7 @@ import net.minecraft.block.TrapDoorBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.WallHeight;
 import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.util.Direction;
 
 public class BlockStateConverting {
 	private static BlockState slab(BlockState from, BlockState to) {
@@ -102,7 +103,7 @@ public class BlockStateConverting {
 		return from.setValue(BlockStateProperties.WATERLOGGED, to.getValue(BlockStateProperties.WATERLOGGED));
 	}
 	
-	public static BlockState convert(BlockState in, Block from, Block to) {
+	public static BlockState convert(BlockState in, Block from, Block to, Direction blockFace, Direction playerFacing) {
 		BlockState out = to.defaultBlockState();
 		
 		if (from instanceof IWaterLoggable && to instanceof IWaterLoggable) {
@@ -135,6 +136,14 @@ public class BlockStateConverting {
 			horizontalBlock(in, out);
 		} else if (in.hasProperty(DirectionalBlock.FACING) && out.hasProperty(DirectionalBlock.FACING)) {
 			directionalBlock(in, out);
+		} else if (out.hasProperty(HorizontalBlock.FACING)) {
+			Direction dir = blockFace;
+			
+			if (dir == Direction.UP || dir == Direction.DOWN) {
+				dir = playerFacing;
+			}
+			
+			out = out.setValue(HorizontalBlock.FACING, dir);
 		}
 		
 		return out;

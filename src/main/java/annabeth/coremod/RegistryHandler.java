@@ -17,5 +17,4 @@ public class RegistryHandler {
 		Registry.register(Registry.RECIPE_TYPE, new ResourceLocation(CoreMain.MODID, "click"), RecipeVars.CLICK_RECIPE);
 		e.getRegistry().register(RecipeVars.CLICK_SERIALIZER);
 	}
-	
 }
